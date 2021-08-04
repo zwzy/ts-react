@@ -6,5 +6,5 @@
             * 新建文件：code ~/.huskyrc  输入以下命令即可
             * export NVM_DIR="$HOME/.nvm"
             * [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-* git cz 提交 
+* git cz 提交 (git commit 提交规范)
     * 文档： https://github.com/commitizen/cz-cli
