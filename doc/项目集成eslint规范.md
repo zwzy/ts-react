@@ -46,3 +46,5 @@
     Google: https://github.com/google/eslint-config-google
     XO: https://github.com/xojs/eslint-config-xo
   ~~~
+* 配置文件相关（根目录下）
+      + .eslintrc.js

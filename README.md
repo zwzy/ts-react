@@ -1,47 +1,24 @@
-# Getting Started with Create React App
+# 项目搭建
+* eslint 采用 airbnb 严格模式，具体具体配置参考docs中文件（项目集成eslint规范）
+* commitlint 采用 cz + commitlint 具体配置参考docs中文件（项目集成git提交规范）
+* react项目规范 具体规范参考docs中文件（React项目规范-airbnb）
+* 公共代码规范 具体规范参考docs中文件（代码规范-aribnb）
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 项目内容与技术(React 项目)
+* 主题切换（黑白）
+* PC手机端适应
+* 资源可配置
+* 支持md文档（代码高亮）
+* 代码规范的集成
+* 集成 typeScript
+* 路由文件配置 + 路由嵌套封装：类似vueRouter中的（RouterView）
+* 集成 redux + toolkit
+* UI组件的设计（不用antd的）
+* 区分容器与UI组件
+* hooks 常用方法封装
+* styled-componets 集成
+* 地图 + Echart 可视化用法集成
+* 不同设计模式运用与类插件的封装（待学）
+* 算法的运用（待学）
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# ts-react
+# 项目技术

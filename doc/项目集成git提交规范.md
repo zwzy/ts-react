@@ -8,3 +8,8 @@
             * [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 * git cz 提交 (git commit 提交规范)
     * 文档： https://github.com/commitizen/cz-cli
+
+* 配置文件相关（根目录下）
+      + .cz-config.js
+      + .commitlint.config
+      + package.json
