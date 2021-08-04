@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/index.css';
 import {
   BrowserRouter as Router,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 ReactDOM.render(
   <Router>
@@ -11,7 +11,7 @@ ReactDOM.render(
       HOME
     </React.StrictMode>
   </Router>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

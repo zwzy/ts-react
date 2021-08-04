@@ -1,15 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-interface Props {
-  
-}
+const Content = () => (
+  <div>
+    Content
+  </div>
+);
 
-const Content = (props: Props) => {
-  return (
-    <div>
-      Content
-    </div>
-  )
-}
-
-export default Content
+export default Content;

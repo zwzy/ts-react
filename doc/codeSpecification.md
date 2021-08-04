@@ -1,4 +1,4 @@
-# 前端React代码规范
+# 前端代码规范
 ## 命名规范
 * 文件名一般小写 即 **file**（除组件文件名外）
 * 组件名 **驼峰式命名** 即 **BreadBox**
@@ -742,4 +742,136 @@ export const MAPPING = {
   Number.isNaN('1.2.3'); // false
   Number.isNaN(Number('1.2.3')); // true
   ~~~
-  
+## CSS in js 样式 规范
+* 样式命名 为驼峰 但对其他类的修饰用 _ 连接
+~~~
+// bad
+{
+  bruceBanner: {
+    color: 'pink',
+    transition: 'color 10s',
+  },
+
+  bruceBannerTheHulk: {
+    color: 'green',
+  },
+}
+
+// good
+{
+  bruceBanner: {
+    color: 'pink',
+    transition: 'color 10s',
+  },
+
+  bruceBanner_theHulk: {
+    color: 'green',
+  },
+}
+~~~
+* 对特殊单独样式使用 muscle_fallback
+~~~
+// bad
+{
+  muscles: {
+    display: 'flex',
+  },
+
+  left: {
+    flexGrow: 1,
+    display: 'inline-block',
+  },
+
+  right: {
+    display: 'inline-block',
+  },
+}
+
+// good
+{
+  muscles: {
+    display: 'flex',
+  },
+
+  left: {
+    flexGrow: 1,
+  },
+
+  left_fallback: {
+    display: 'inline-block',
+  },
+
+  right_fallback: {
+    display: 'inline-block',
+  },
+}
+~~~
+* 命名媒体查询断点 用 "small", "medium", and "large"
+~~~
+// bad
+const breakpoints = {
+  mobile: '@media (max-width: 639px)',
+  tablet: '@media (max-width: 1047px)',
+  desktop: '@media (min-width: 1048px)',
+};
+
+// good
+const breakpoints = {
+  small: '@media (max-width: 639px)',
+  medium: '@media (max-width: 1047px)',
+  large: '@media (min-width: 1048px)',
+};
+~~~
+* 在组件后定义样式
+~~~
+// bad
+const styles = {
+  container: {
+    display: 'inline-block',
+  },
+};
+
+function MyComponent({ styles }) {
+  return (
+    <div {...css(styles.container)}>
+      Never doubt that a small group of thoughtful, committed citizens can
+      change the world. Indeed, it’s the only thing that ever has.
+    </div>
+  );
+}
+
+export default withStyles(() => styles)(MyComponent);
+
+// good
+function MyComponent({ styles }) {
+  return (
+    <div {...css(styles.container)}>
+      Never doubt that a small group of thoughtful, committed citizens can
+      change the world. Indeed, it’s the only thing that ever has.
+    </div>
+  );
+}
+
+export default withStyles(() => ({
+  container: {
+    display: 'inline-block',
+  },
+}))(MyComponent);
+~~~
+* 在相同缩进级别的相邻块之间留空行
+~~~
+// good
+{
+  bigBang: {
+    display: 'inline-block',
+
+    '::before': {
+      content: "''",
+    },
+  },
+
+  universe: {
+    border: 'none',
+  },
+}
+~~~
