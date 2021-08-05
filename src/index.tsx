@@ -4,11 +4,13 @@ import './styles/index.css';
 import {
   BrowserRouter as Router,
 } from 'react-router-dom';
+import RouterView from './routes/RouterView';
+import routes from './routes';
 
 ReactDOM.render(
   <Router>
     <React.StrictMode>
-      HOME
+      <RouterView routes={routes} />
     </React.StrictMode>
   </Router>,
   document.getElementById('root'),

@@ -1,14 +1,16 @@
-import { ComponentProps, ComponentType, ReactHTMLElement } from "react";
+import { ReactElement } from 'react';
 
 export interface IRoute {
   name: string,
   path: string,
-  roles: string[],
+  component: () => ReactElement,
+
+  roles?: string[],
   exact?: boolean,
   routes?: IRoute[],
-  component: any
 }
 export interface IUserInfo {
   name: string,
   id: string,
 }
+export default IUserInfo;

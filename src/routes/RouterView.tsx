@@ -1,31 +1,37 @@
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import { IRoute, IUserInfo } from '../utils/type';
+import { Route, Switch } from 'react-router-dom';
+import IUserInfo, { IRoute } from '../utils/type';
 
-export default function RouterView({
+interface IRouterView {
+  routes: IRoute[]
+  userInfo?: IUserInfo
+}
+function RouterView({
   routes = [],
-  userInfo,
-}: {
-  routes: IRoute[],
-  userInfo: IUserInfo
-}) {
+  userInfo = {
+    id: '',
+    name: '',
+  },
+}: IRouterView) {
   return (
     <Switch>
-      {
-        routes.map((route: IRoute) =>
-          <Route
-            path={route.path}
-            render={props => (
-              <route.component
+      {routes.map((item: IRoute) => (
+        <Route
+          key={item.path}
+          path={item.path}
+          render={(props: any) => (
+            <item.component
+              // const props = { history, match, location };
               // Route 本身的props history location 等路由信息
-                {...props}
-                routes={route.routes}
-                userInfo={userInfo}
-              />
-            )}
-          />
-        )
-      }
+              // eslint-disable-next-line react/jsx-props-no-spreading
+              {...props}
+              routes={item.routes}
+              userInfo={userInfo}
+            />
+          )}
+        />
+      ))}
     </Switch>
   );
 }
+export default RouterView;
