@@ -3,7 +3,7 @@ module.exports = {
     { value: "feat",          name: "✨feat:          增加新功能" },
     { value: "fix",           name: "🐛fix:           修复bug" },
     { value: "docs",          name: "📝docs:          修改文档" },
-    { value: "perf",           name: "⚡️perf:          性能优化" },    
+    { value: "perf",          name: "⚡️perf:           性能优化" },    
     { value: "init",          name: "🎉init:          初始提交" },
     { value: "add",           name: "➕add:           添加依赖" },
     { value: "build",         name: "🔨build:         打包" },
@@ -14,7 +14,7 @@ module.exports = {
     { value: "revert",        name: "⏪revert:        版本回退" },
     { value: "style",         name: "🎨style:         样式修改不影响逻辑" },
     { value: "test",          name: "✅test:          增删测试" },
-    { value: "test",          name: "💄ui             UI调整" },
+    { value: "ui",          name: "💄ui             UI调整" },
   ],
   scopes: [],
   messages: {
