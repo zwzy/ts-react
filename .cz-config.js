@@ -14,7 +14,7 @@ module.exports = {
     { value: "revert",        name: "⏪revert:        版本回退" },
     { value: "style",         name: "🎨style:         样式修改不影响逻辑" },
     { value: "test",          name: "✅test:          增删测试" },
-    { value: "ui",          name: "💄ui             UI调整" },
+    { value: "ui",            name: "💄ui             UI调整" },
   ],
   scopes: [],
   messages: {
