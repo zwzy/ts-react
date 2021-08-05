@@ -13,3 +13,11 @@
       + .cz-config.js
       + .commitlint.config
       + package.json
+* package.json中的配置不要和commitlint.config.js冲突（如下）。
+~~~
+ "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+~~~
