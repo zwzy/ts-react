@@ -17,7 +17,7 @@ const customTypes = [
   'init', // 项目初始化
   'add', // 增加依赖
   'ui', // UI调整
-  'del', // 删除
+  'del', // 删除代码或文件
 ];
 
 module.exports = {
