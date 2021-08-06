@@ -19,7 +19,7 @@ module.exports = {
   scopes: [],
   messages: {
     type: "选择更改类型:\n",
-    scope: "更改的范围:\n",
+    scope: "影响的范围, 比如: route, component, utils, build...:\n",
     // 如果allowcustomscopes为true，则使用
     customScope: '更改的范围:\n',
     subject: "简短描述:\n",
