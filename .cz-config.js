@@ -3,7 +3,7 @@ module.exports = {
     { value: "feat",          name: "✨feat:          增加新功能" },
     { value: "fix",           name: "🐛fix:           修复bug" },
     { value: "docs",          name: "📝docs:          修改文档" },
-    { value: "perf",          name: "⚡️perf:           性能优化" },    
+    { value: "perf",          name: "🚀perf:          性能优化" },    
     { value: "init",          name: "🎉init:          初始提交" },
     { value: "add",           name: "➕add:           添加依赖" },
     { value: "build",         name: "🔨build:         打包" },
